@@ -1,12 +1,37 @@
+<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDJQxy9GhIQVPQRwzuQgFP0WrR24NGYBMY",
+    authDomain: "u-up-dc17e.firebaseapp.com",
+    databaseURL: "https://u-up-dc17e.firebaseio.com",
+    projectId: "u-up-dc17e",
+    storageBucket: "u-up-dc17e.appspot.com",
+    messagingSenderId: "612215539888"
+  };
+  firebase.initializeApp(config);
+</script>
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      ユーアップ株式会社
+      2019年3月
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content padding overflow-scroll="true">
+    <ion-grid id="calender">
+      <ion-row id="week">
+        <ion-col>日</ion-col>
+        <ion-col>月</ion-col>
+        <ion-col>火</ion-col>
+        <ion-col>水</ion-col>
+        <ion-col>木</ion-col>
+        <ion-col>金</ion-col>
+        <ion-col>土</ion-col>
+      </ion-row>
+    </ion-grid>
 </ion-content>

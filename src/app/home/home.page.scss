@@ -1,1 +1,19 @@
-
+ion-content{
+  text-align: center;
+  display: block;
+}
+::ng-deep ion-row{
+  width: 150%;
+}
+ion-grid{
+  height: 100%;
+}
+::ng-deep .week{
+  height: 20%;
+}
+::ng-deep ion-col{
+  border: solid 1px black;
+}
+ion-content{
+  -webkit-overflow-scrolling: touch;
+}
