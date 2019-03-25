@@ -3,17 +3,23 @@ ion-content{
   display: block;
 }
 ::ng-deep ion-row{
-  width: 150%;
+  width: 100%;
 }
 ion-grid{
   height: 100%;
+  width: 100%;
+  padding: 0;
 }
 ::ng-deep .week{
-  height: 20%;
+  height: 19%;
 }
 ::ng-deep ion-col{
   border: solid 1px black;
 }
 ion-content{
   -webkit-overflow-scrolling: touch;
+}
+::ng-deep #week{
+  height: 4%;
+  padding: auto;
 }
