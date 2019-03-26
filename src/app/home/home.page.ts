@@ -34,10 +34,10 @@ export class HomePage {
       }
 
       for(var i=0; i<=30; i++){
-        var daynow = new Date(yearnow, monthnow, i+1);
+        var daynow = new Date(yearnow, 4, i+1);
         var select = document.getElementsByClassName(daynow.getDay().toString());
 
-        console.log(select[stage]);
+        console.log(daynow);
         select[stage].textContent = (i+1).toString();
         
 
