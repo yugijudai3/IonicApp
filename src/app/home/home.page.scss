@@ -14,7 +14,8 @@ ion-grid{
   height: 19%;
 }
 ::ng-deep ion-col{
-  border: solid 1px black;
+  border: solid thin black;
+  border-collapse: collapse;
 }
 ion-content{
   -webkit-overflow-scrolling: touch;

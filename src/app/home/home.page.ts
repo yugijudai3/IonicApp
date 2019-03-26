@@ -10,9 +10,7 @@ export class HomePage {
     var datenow = new Date();
     var yearnow = datenow.getFullYear();
     var monthnow = datenow.getMonth();
-    var firstday = new Date(yearnow, monthnow, 1);
-    
-
+    var stage = 0;
 
     //画面に表示
     window.onload = function(){
@@ -28,14 +26,25 @@ export class HomePage {
           var weeknum:HTMLElement = <HTMLElement>document.getElementById("week"+j);
           var day:HTMLElement = <HTMLElement>document.createElement("ion-col");
           var span:HTMLElement = <HTMLElement>document.createElement("span");
-    
-          span.textContent = i.toString();
-          day.classList.add(i.toString());
+          
+          span.classList.add(i.toString());
           weeknum.appendChild(day);
           day.appendChild(span);
         }
       }
-      console.log(firstday.getDay());
+
+      for(var i=0; i<=30; i++){
+        var daynow = new Date(yearnow, monthnow, i+1);
+        var select = document.getElementsByClassName(daynow.getDay().toString());
+
+        console.log(select[stage]);
+        select[stage].textContent = (i+1).toString();
+        
+
+        if(daynow.getDay().toString() == "6"){
+          stage += 1;
+        }
+      }
     }
   }
 }
