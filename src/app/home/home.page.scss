@@ -6,9 +6,10 @@ ion-content{
   width: 100%;
 }
 ion-grid{
+  display: table;
   height: 100%;
   width: 100%;
-  padding: 0;
+  padding-bottom: 0;
 }
 ::ng-deep .week{
   height: 19%;
@@ -16,6 +17,8 @@ ion-grid{
 ::ng-deep ion-col{
   border: solid thin black;
   border-collapse: collapse;
+  border-spacing: 0;
+  padding: 0px;
 }
 ion-content{
   -webkit-overflow-scrolling: touch;
