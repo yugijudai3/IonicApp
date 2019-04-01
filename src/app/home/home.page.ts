@@ -15,9 +15,9 @@ export class HomePage {
 }
 
 function createcalender(){
-  var datenow = new Date();
+    var monthcontent:HTMLElement = <HTMLElement>document.getElementById("month");
+    var datenow = new Date();
     var yearnow = datenow.getFullYear();
-    var monthnow = datenow.getMonth();
     var stage = 0;
 
   for(var j=1; j<=5; j++){
@@ -43,7 +43,7 @@ function createcalender(){
     var daynow = new Date(yearnow, 4, i+1);
     var select = document.getElementsByClassName(daynow.getDay().toString());
 
-    console.log(daynow);
+    console.log(monthcontent.innerHTML);
     select[stage].textContent = (i+1).toString();
     
 
