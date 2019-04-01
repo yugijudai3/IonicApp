@@ -20,7 +20,7 @@ ion-grid{
   border-spacing: 0;
   padding: 0px;
 }
-ion-content{
+::ng-deep ion-content{
   -webkit-overflow-scrolling: touch;
 }
 ::ng-deep #week{
