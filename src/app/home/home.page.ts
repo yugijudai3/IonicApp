@@ -40,10 +40,10 @@ function createcalender(){
   }
 
   for(var i=0; i<=30; i++){
-    var daynow = new Date(yearnow, 4, i+1);
+    var daynow = new Date(yearnow, 3, i+1);
     var select = document.getElementsByClassName(daynow.getDay().toString());
 
-    console.log(monthcontent.innerHTML);
+    console.log(daynow);
     select[stage].textContent = (i+1).toString();
     
 

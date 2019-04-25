@@ -1,7 +1,7 @@
 <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
 <script>
   // Initialize Firebase
-  var config = {
+  var config = { 
     apiKey: "AIzaSyDJQxy9GhIQVPQRwzuQgFP0WrR24NGYBMY",
     authDomain: "u-up-dc17e.firebaseapp.com",
     databaseURL: "https://u-up-dc17e.firebaseio.com",
@@ -14,11 +14,11 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-        <button ion-button menuToggle>
+        <button ion-button menuToggle class="button button-icon icon ion-navicon">
           <ion-icon name="menu"></ion-icon>
         </button>
-      ユーアップ学習塾
-      2019年<span id="month">3</span>月
+      ユーアップアカデミー
+      2019年<span id="month">4</span>月
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -34,4 +34,8 @@
         <ion-col>土</ion-col>
       </ion-row>
     </ion-grid>
+    <ion-item>
+      <ion-label>Date</ion-label>
+      <ion-datetime display-format="MMM DD, YYYY"></ion-datetime>
+    </ion-item>
 </ion-content>
